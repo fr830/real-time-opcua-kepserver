@@ -1,15 +1,15 @@
 ---
 applications:
-- name: real-time-chart-starter
+- name: opcua-sim-real-time-chart-starter
   memory: 128M
   command: node app.js
   buildpack: nodejs_buildpack
 services:
-  - eagleappuaa
-  - eagleappts
+  - william-machine-uaa
+  - william-machine-time-series
 env:
     node_env: cloud
     uaa_service_label : predix-uaa
-    clientId: eagleappclient
-    base64ClientCredential: ZWFnbGVhcHBjbGllbnQ6ZWFnbGVhcHBjbGllbnQ=
+    clientId: app_client_id
+    base64ClientCredential: YXBwX2NsaWVudF9pZDpzZWNyZXQ=
     
